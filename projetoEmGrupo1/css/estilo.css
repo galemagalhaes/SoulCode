@@ -1,0 +1,601 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura&display=swap');
+
+/*#ECFC30 #29D9CB #953AF0 #D95E29 #FAF82D #000000 #ffffff*/
+
+.home{
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 15vh;
+  background-image: linear-gradient(90deg,#000 , #953AF0 );
+  text-align: center;
+  align-items: center;
+}
+header img{
+  box-sizing: border-box;
+  width: 35%;
+  margin: auto;
+  border-radius: 50%;
+}
+.divLogo{
+  width: 20%;
+
+}
+nav{
+  margin: 20px;
+
+}
+.divNav{
+  width: 80%;
+}
+.divCompra{
+  width: 20%;
+}
+.divCompra img{
+  width: 15%;
+}
+header a{
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: 700;
+  margin: 30px;
+  font-size:large; 
+}
+
+/*MAIN*/
+main{
+  width: 100%;
+  display: flex;
+  padding: 0;
+  background-color: #000;
+}
+.grid-container{
+  width: 100%; 
+  margin: 0;
+}
+
+.grid{
+  display: flex;
+  flex-direction: row;
+}
+.secDestaques{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 1.5% 1.5% 0 1.5%;  
+  justify-content: space-between;
+}
+.meio{
+  display: flex;
+  flex-direction: column;
+  margin: 1.5%; 
+  align-items: center;
+}
+.secNav{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  box-sizing: border-box;  
+  height: 40%;
+}
+.secNav div{
+  display: flex;
+  justify-content: space-around;
+  background-color: #000000; 
+  width: 100%;  
+  margin: 3%;
+}
+.secNav img {
+  width: 100%;
+  border-radius: 50%; 
+  transition: all 0.5s;
+  
+}
+.secNav img:hover{
+  transform: scale(1.2);  
+}
+.secBanner{
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  margin-top: 15vh;
+}
+.secBanner img,  .secDestaques img {
+  width: 100%;
+  display: flex;
+}
+.dest{
+  width: 49%;
+  display: flex;
+}
+.secPropaganda, .secPropaganda2{
+  display: flex; 
+  margin:  1.5% 0;
+}
+
+.secPropaganda img, .secPropaganda2 img{
+  display: flex;
+  width: 100%; 
+}
+/*GRID*/
+.secBanner { grid-area: banner; }
+.secNav {grid-area: nav;}
+.secPropaganda { grid-area: propaganda; }
+.secPropaganda2 { grid-area: propaganda2; }
+.secDestaques { grid-area: destaques; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:  
+    'banner banner banner banner banner banner'    
+    'propaganda nav nav nav propaganda2'    
+    'propaganda destaques destaques destaques propaganda2'
+    'propaganda destaques destaques destaques propaganda2';  
+}
+
+/*FOOTER*/
+footer{
+  background-image: linear-gradient(45deg, #000, #953AF0);
+  padding: 3vh;  
+}
+footer img{
+  width: 4vh;  
+  border-radius: 50%;
+}
+footer section{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  margin: auto;
+  height: 10vh;
+  padding: 1.5%;
+}
+.dados{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #ffffff;
+  font-size: small;
+  font-family:'Jura';
+}
+footer p{
+margin: 0;
+padding: 0;
+}
+
+
+/*Demais páginas*/
+.paginas{
+  display: flex;
+  margin-top: 15vh;
+  flex-direction: column;
+  background-color: #000000;
+  width: 100%;
+}
+.secPropagandaPaginas{
+  display: flex;
+  width: 20%;
+  margin: 3% 0;
+  
+}
+.secPropagandaPaginas img{
+display: flex;
+width: 100%;
+}
+.conteudo {
+  display: flex; 
+  background-color: #953AF0;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.conteudo img {
+  width: 100%;
+}
+/*grid*/
+.secPropagandaPaginas { grid-area: propaganda; }
+.conteudo {grid-area: conteudo;}
+
+
+.paginas {
+  display: grid;
+  grid-template-areas:  
+    'secPropagandaPaginas conteudo '    
+    'secPropagandaPaginas conteudo '    
+    'secPropagandaPaginas conteudo '    
+    'secPropagandaPaginas conteudo '    
+    ;  
+}
+
+
+.main-cadastro{
+  display: flex;
+  width: 80%;
+  margin: 15vh auto;
+  background-color: #000;
+  font-family: 'Jura';
+}
+.titulo{
+  font-family: 'Chakra Petch', sans-serif;
+  text-align: center;
+  font-size: x-large;
+  color: #953AF0;
+}
+
+.main-sobre{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80vh;
+  margin-top: 5vh;
+}
+.main-sobre p, .main-hq p{
+  font-family: 'Jura';
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  justify-content: center;
+}
+.main-cadastro p{
+  width: 100%;
+  font-family: 'Jura';
+  font-weight:400;
+  display: flex;
+  flex-direction: row;
+  padding: 2%;
+  justify-content: center;
+}
+.funko-titulo {
+  display: inline-block;
+}
+
+.funko-table{
+  display: flex;
+  width: 100%;
+  margin: auto;
+}
+table{
+  display: flex;
+  width: 100%;
+  color: #ffffff;
+  font-family: 'Jura';
+
+}
+.funko-img {
+  height: 70px;
+  width: 70px;
+}
+
+td {
+  vertical-align: middle;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Flex */
+.flex {
+  margin: auto;
+  position: relative;
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.justificaShow{
+  justify-content: center;
+}
+/* Flex Item */
+.item {
+  margin: 5px;
+  padding:80px;
+  background: linear-gradient(80deg,#29D9CB , #953AF0);
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  border: 5px solid black;
+}
+.main-produtos{
+  margin-top: 15vh;
+}
+
+h1{
+  font-family: 'Chakra Petch', sans-serif;
+  color: yellow;
+  text-align: center;
+  }
+
+.titulo{
+  font-family: 'Chakra Petch', sans-serif;
+  color: yellow;
+  margin-right: 570px;
+  font-size: 50px;
+}
+
+.card {
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ max-width: 250px;
+ margin: auto;
+ text-align: center;
+ font-family: arial;
+ display: inline-block;
+ padding: 100px;
+}
+
+.price {
+ color: grey;
+ font-size: 22px;
+}
+
+.card button {
+ border: none;
+ outline: 0;
+ padding: 12px;
+ color: white;
+ background-image: linear-gradient(80deg,#29D9CB , #953AF0);;
+ text-align: center;
+ cursor: pointer;
+ width: 100%;
+ font-size: 18px;
+}
+
+.card button:hover {
+ opacity: 0.7;
+}
+
+.fotinhas{
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.fotinhas:hover{
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.anuncio{
+  float: left;
+  margin-bottom: 150px;
+  position: static;
+}
+
+.menu{
+  margin-top: 150px;
+}
+.div-caneca{
+  display: flex;
+  flex-direction: row;
+}
+.center{
+  display: flex;
+  flex-direction: column;
+}
+.div-prop{
+  display: flex;
+  flex-direction: column;
+}
+button { cursor: pointer }
+
+.product-image {
+    float: left;
+    width: 20%;
+  }
+  
+  .product-details {
+    float: left;
+    width: 37%;
+  }
+  
+  .product-price {
+    float: left;
+    width: 12%;
+  }
+  
+  .product-add {
+    float: left;
+    width: 9%;
+  }
+  
+  .product-line-price {
+    float: left;
+    width: 12%;
+    text-align: right;
+  }
+  
+  
+  .shopping-cart:before, .column-labels:before, .product:before, .shopping-cart:after, .column-labels:after, .product:after {
+    content: '';
+    display: table;
+  }
+  
+  .shopping-cart:after, .column-labels:after, .product:after {
+    clear: both;
+  }
+  
+  .shopping-cart, .column-labels, .product {
+    zoom: 1;
+  }
+  
+  .shopping-cart{
+    width: 100%;
+    margin: 15vh 0 ;
+  }
+  .product .product-line-price:before {
+    content: 'R$';
+  }
+  
+  
+  .home-car {
+    padding: 0px 30px 30px 20px;
+    font-family: 'Jura', sans-serif;
+    font-weight: 100;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-weight: 100;
+  }
+  
+  label {
+    color: #aaa;
+  }
+  
+  .shopping-cart {
+    margin-top: -45px;
+  }
+  
+  
+  .column-labels label {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+  }
+  .column-labels .product-image, .column-labels .product-details, .column-labels .product-add {
+    text-indent: -9999px;
+  }
+  
+  
+  .product {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  .product .product-image {
+    text-align: center;
+  }
+  .product .product-image img {
+    width: 100px;
+  }
+  .product .product-details .product-title {
+    margin-right: 20px;
+    font-family: 'Jura', sans-serif;
+  }
+  .product .product-details .product-description {
+    margin: 5px 20px 5px 0;
+    line-height: 1.4em;
+  }
+  .product .add-product {
+    border: 0;
+    padding: 4px 8px;
+    background-color: rgb(153, 202, 153);
+    color: #fff;
+    font-family: 'Jura', sans-serif;
+    font-size: 12px;
+    border-radius: 3px;
+  }
+  .product .add-product:hover {
+    background-color: green;
+  }
+  
+  
+  
+  .checkout {
+    float: right;
+    border: 0;
+    margin-top: 20px;
+    padding: 6px 25px;
+    background-color: #6b6;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 3px;
+  }
+  
+  .checkout:hover {
+    background-color: #494;
+  }
+  
+  
+  @media screen and (max-width: 650px) {
+    .shopping-cart {
+      margin: 0;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+    }
+  
+    .column-labels {
+      display: none;
+    }
+  
+    .product-image {
+      float: right;
+      width: auto;
+    }
+    .product-image img {
+      margin: 0 0 10px 10px;
+    }
+  
+    .product-details {
+      float: none;
+      margin-bottom: 10px;
+      width: auto;
+    }
+  
+    .product-price {
+      clear: both;
+      width: 70px;
+    }
+  
+    .product-add {
+      width: auto;
+    }
+  
+    .product-line-price {
+      float: right;
+      width: 70px;
+    }
+  }
+
+  textarea {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    resize: none;
+    font-size: 22px;
+}
+
+  
+  @media screen and (max-width: 350px) {
+    .product-add {
+      float: right;
+    }
+  
+    .product-line-price {
+      float: right;
+      clear: left;
+      width: auto;
+      margin-top: 10px;
+    }
+  
+    .product .product-line-price:before {
+      content: 'Item Total: r$';
+    }
+    
+  }
