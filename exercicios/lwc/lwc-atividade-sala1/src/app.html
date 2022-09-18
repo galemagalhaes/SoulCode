@@ -1,0 +1,33 @@
+<template>
+	
+	<div class="slds-p-around_medium">
+		<p>Empresa: {empresa}</p>
+		<p>CNPJ: {cnpj}</p>
+		<p>Endereço: {endereco}</p>		
+	</div>
+	
+
+	<template if:false={visivel}>
+	<div class="slds-p-around_medium">
+		<p>Produto: {produto}</p>
+		<p>Descrição: {descricao}</p>
+		<p>Preço: R$ {preco}</p>	
+	</div>
+	</template>
+
+	<template if:false={visivel}>
+	<div class="slds-p-around_medium">
+		<h2>Promoção</h2>
+		<p>oferta1: {oferta1}% desconto</p>
+		<p>oferta2: {oferta2}% desconto</p>	
+	</div>
+	</template>
+
+	<lightning-button 
+		variant="destructive" 
+		label="butao tira div" 
+		title="Destructive action"  
+		class="slds-m-left_x-small"
+		onclick={onClick}>				
+	</lightning-button>
+</template>
