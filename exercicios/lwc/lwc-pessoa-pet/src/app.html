@@ -1,0 +1,32 @@
+<template>
+	<lightning-card title="Template IF">
+		<template if:true={visivel}>
+		<div class="slds-p-around_medium">
+			<h1>Olá, {nome}</h1>
+			<p>Nome: {nome}</p>
+			<p>Idade: {idade}</p>
+			<p>Email: {email}</p>
+			<p>CPF: {cpf}</p>
+		</div>
+		</template>
+		<template if:false={visivel}>
+		<div class="slds-p-around_medium">
+			<h1>Seu Pet</h1>
+			<p>Nome: {nomePet}</p>
+			<p>Raça: {raca}</p>
+			<p>Peso: {peso}</p>
+			<p>Idade do pet: {idadePet}</p>
+		</div>
+		</template>
+
+	<lightning-button 
+		variant="destructive" 
+		label="butao du mal" 
+		title="Destructive action"  
+		class="slds-m-left_x-small"
+		onclick={onClick}>				
+	</lightning-button>
+
+	</lightning-card>
+
+</template>
